@@ -68,7 +68,52 @@ console.log(typeof(+"abc"));
 //unary operator => +, - etc.
 console.log(NaN == NaN);
 console.log(null == null);
+console.log(typeof(NaN));
 //NaN === infinity
+console.log("adc"+"def");//string concatenation
+console.log("adc"+ 1);//emplicit conversion
+console.log(1 + "abc");//emplicit conversion
+console.log(1 + 2 + "abc");//emplicit conversion
+console.log("abc" + 1 + 2);//emplicit conversion
+console.log(8 + "8");//emplicit conversion
+console.log(8 + +"8");//explicit conversion
+console.log(-"8" + 1);//explicit conversion return with sign
+//numeric conversion happensfor all -,+,*,/
+//string conversion happens when + is used and one of the operand is string
+console.log(1 == true);//numeric conversion 
+console.log("0" === false);
+//numeric, boolean, string
+
+//Arrays in JS => collection of contigious memory of hettroginious elements
+
+var ar = [1,2,3,4];//by value
+var arr = [1,2,"b",true];
+var arrEmpty = [];
+var arrDy = new Array(0);
+//constructor function
+// arr[99] = 1;
+console.log(arr);
+console.log(arr?.length);
+var ref = arr;//by reference
+console.log(ref);
+// arr = [];
+console.log(ref);
+console.log(arr);
+// ar = [];
+ref = ar = [];
+console.log(ref);
+console.log(arr);
+arr.length = 0;
+console.log(arr);
+console.log(ref);
+
+
+
+ 
+
+ 
+
+
 
 
 
