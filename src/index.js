@@ -86,24 +86,24 @@ console.log("0" === false);
 
 //Arrays in JS => collection of contigious memory of hettroginious elements
 
-var ar = [1,2,3,4];//by value
-var arr = [1,2,"b",true];
-var arrEmpty = [];
-var arrDy = new Array(0);
+var ar = [1,2,3,4];//initial data
+var arr = [1,2,"b",true];//hettroginious elements
+var arrEmpty = [];//empty array
+var arrDy = new Array(0);//empty array dynamically create code
 //constructor function
 // arr[99] = 1;
 console.log(arr);
 console.log(arr?.length);
-var ref = arr;//by reference
+var ref = arr;//refering data
 console.log(ref);
 // arr = [];
 console.log(ref);
 console.log(arr);
 // ar = [];
-ref = ar = [];
+ref = ar = [];//empty both variable
 console.log(ref);
 console.log(arr);
-arr.length = 0;
+arr.length = 0;//empty both variable 
 console.log(arr);
 console.log(ref);
 
